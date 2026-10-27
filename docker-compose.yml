@@ -1,0 +1,72 @@
+services:
+  vikunja:
+    image: vikunja/vikunja:latest
+    container_name: vikunja-app
+    restart: unless-stopped
+    ports:
+      # Bound to localhost so host Nginx can reverse proxy to it without exposing port publicly
+      - "127.0.0.1:3456:3456"
+    environment:
+      # General & URLs
+      VIKUNJA_SERVICE_PUBLICURL: ${VIKUNJA_PUBLIC_URL:-http://localhost:3456/}
+      VIKUNJA_SERVICE_JWTSECRET: ${VIKUNJA_JWT_SECRET}
+      VIKUNJA_SERVICE_TIMEZONE: ${TIMEZONE:-UTC}
+
+      # Access Control & Registration Lock (Checklist Item 3)
+      VIKUNJA_SERVICE_ENABLEREGISTRATION: ${ENABLE_REGISTRATION:-true}
+
+      # Database Configuration
+      VIKUNJA_DATABASE_TYPE: postgres
+      VIKUNJA_DATABASE_HOST: db
+      VIKUNJA_DATABASE_USER: ${DB_USER:-vikunja}
+      VIKUNJA_DATABASE_PASSWORD: ${DB_PASSWORD}
+      VIKUNJA_DATABASE_DATABASE: ${DB_NAME:-vikunja}
+
+      # Productivity & Features (Checklist Items 2 & 5)
+      VIKUNJA_SERVICE_ENABLETASKREMINDERS: "true"
+      VIKUNJA_SERVICE_ENABLETASKATTACHMENTS: "true"
+      VIKUNJA_WEBHOOKS_ENABLED: "true"
+      VIKUNJA_BACKGROUNDWORKER_ENABLED: "true"
+
+      # Instant Notification System / SMTP (Checklist Item 2)
+      VIKUNJA_MAILER_ENABLED: ${MAIL_ENABLED:-false}
+      VIKUNJA_MAILER_HOST: ${MAIL_HOST:-}
+      VIKUNJA_MAILER_PORT: ${MAIL_PORT:-587}
+      VIKUNJA_MAILER_AUTHTYPE: ${MAIL_AUTHTYPE:-plain}
+      VIKUNJA_MAILER_USERNAME: ${MAIL_USER:-}
+      VIKUNJA_MAILER_PASSWORD: ${MAIL_PASSWORD:-}
+      VIKUNJA_MAILER_FROMEMAIL: ${MAIL_FROM:-noreply@example.com}
+      VIKUNJA_MAILER_FORCESSL: ${MAIL_FORCESSL:-false}
+    volumes:
+      - vikunja_files:/app/vikunja/files
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - vikunja-net
+
+  db:
+    image: postgres:16-alpine
+    container_name: vikunja-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USER:-vikunja}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME:-vikunja}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-vikunja} -d ${DB_NAME:-vikunja}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - vikunja-net
+
+volumes:
+  vikunja_files:
+  pgdata:
+
+networks:
+  vikunja-net:
+    driver: bridge

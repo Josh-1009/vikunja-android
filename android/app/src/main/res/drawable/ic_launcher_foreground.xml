@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Vikunja task / checkmark foreground mark -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,54 L48,64 L70,42"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M32,30 L76,30 A6,6 0 0,1 82,36 L82,72 A6,6 0 0,1 76,78 L32,78 A6,6 0 0,1 26,72 L26,36 A6,6 0 0,1 32,30 Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4" />
+</vector>

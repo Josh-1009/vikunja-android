@@ -1,0 +1,197 @@
+<resources>
+    <string name="app_name">فيكونجا</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="server_url">رابط الخادم</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="totp_token">رمز التحقق الثنائي (اختياري)</string>
+    <string name="api_token">رمز واجهة البرمجة (API Token)</string>
+    <string name="login_with_api_token">دخول عبر رمز API</string>
+    <string name="login_with_credentials">اسم المستخدم وكلمة المرور</string>
+    <string name="allow_self_signed">السماح بشهادات SSL الموقعة ذاتياً</string>
+    <string name="connecting">جارٍ الاتصال...</string>
+    <string name="login_success">تم الاتصال بنجاح</string>
+    <string name="logout">تسجيل الخروج</string>
+
+    <!-- Navigation & Tabs -->
+    <string name="nav_today">اليوم</string>
+    <string name="nav_upcoming">القادمة</string>
+    <string name="nav_overdue">المتأخرة</string>
+    <string name="nav_projects">المشاريع</string>
+    <string name="nav_notifications">الإشعارات</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <!-- Tasks -->
+    <string name="tasks">المهام</string>
+    <string name="create_task">مهمة جديدة</string>
+    <string name="quick_add">إضافة سريعة</string>
+    <string name="quick_add_hint">مثال: إنهاء التقرير *غداً !عالي ~العمل #عاجل</string>
+    <string name="task_title">عنوان المهمة</string>
+    <string name="task_description">الوصف</string>
+    <string name="due_date">تاريخ الاستحقاق</string>
+    <string name="start_date">تاريخ البدء</string>
+    <string name="end_date">تاريخ الانتهاء</string>
+    <string name="priority">الأولوية</string>
+    <string name="repeat_mode">التكرار</string>
+    <string name="percent_done">نسبة الإنجاز</string>
+    <string name="labels">التصنيفات</string>
+    <string name="assignees">المكلفون</string>
+    <string name="comments">التعليقات</string>
+    <string name="attachments">المرفقات</string>
+    <string name="relations">العلاقات والمهام الفرعية</string>
+    <string name="mark_done">تحديد كمكتمل</string>
+    <string name="mark_undone">إلغاء الاكتمال</string>
+    <string name="delete">حذف</string>
+    <string name="duplicate">نسخ مطابق</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+
+    <!-- Views -->
+    <string name="view_list">قائمة</string>
+    <string name="view_kanban">كانبان</string>
+    <string name="view_gantt">مخطط غانت</string>
+    <string name="view_table">جدول</string>
+    <string name="add_bucket">إضافة عمود</string>
+    <string name="bucket_title">عنوان العمود</string>
+    <string name="bucket_limit">الحد الأقصى</string>
+
+    <!-- Notifications -->
+    <string name="reminders_channel">تذكيرات المهام</string>
+    <string name="due_dates_channel">تنبيهات مواعيد الاستحقاق</string>
+    <string name="mentions_channel">الإشارات والتحديثات</string>
+    <string name="sync_channel">المزامنة والخدمة الخلفية</string>
+    <string name="action_snooze_10m">تأجيل 10 دقائق</string>
+    <string name="action_snooze_1h">تأجيل ساعة</string>
+    <string name="action_snooze_tomorrow">تأجيل للغد</string>
+    <string name="action_open">فتح</string>
+    <string name="daily_summary_title">الملخص اليومي لمهام فيكونجا</string>
+
+    <!-- Settings -->
+    <string name="theme">المظهر</string>
+    <string name="theme_system">تلقائي من النظام</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="theme_amoled">أسود AMOLED</string>
+    <string name="language">اللغة</string>
+    <string name="lang_system">لغة النظام</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ar">العربية</string>
+    <string name="sync_interval">فترة المزامنة التلقائية</string>
+    <string name="persistent_service">المزامنة اللحظية المستمرة</string>
+    <string name="persistent_service_desc">تضمن استمرار المزامنة بالخلفية دون إيقاف التطبيق من قبل النظام.</string>
+    <string name="popup_reminders_toggle">تنبيهات منبثقة ملء الشاشة</string>
+    <string name="popup_reminders_toggle_desc">عرض نافذة منبه شبيهة بـ TickTick على شاشة القفل وفوق التطبيقات.</string>
+    <string name="persistent_notif_section">إشعار المهام المثبت في شريط الإشعارات</string>
+    <string name="persistent_notif_toggle">تثبيت جدول مهام اليوم</string>
+    <string name="persistent_notif_toggle_desc">عرض مهام اليوم والمتأخرة مباشرة في شريط الإشعارات للوصول السريع.</string>
+    <string name="persistent_min_priority_label">فلترة حسب الأولوية</string>
+    <string name="battery_optimization">دليل تحسين البطارية للأجهزة</string>
+    <string name="battery_optimization_desc">فحص التشغيل التلقائي والتنبيهات الدقيقة وإعدادات الشركات المصنعة.</string>
+    <string name="api_tokens_mgmt">رموز API</string>
+    <string name="webhooks_mgmt">خطافات الويب (Webhooks)</string>
+    <string name="multi_account">الحسابات</string>
+
+    <!-- Share Target -->
+    <string name="share_create_task">إنشاء مهمة من النص المشارك</string>
+    <string name="shared_text_saved">تم حفظ المهمة من الرابط أو النص المشارك</string>
+    <string name="create_project">مشروع جديد</string>
+    <string name="no_projects_found">لا توجد مشاريع حتى الآن</string>
+    <string name="refresh_projects">تحديث المشاريع</string>
+
+    <!-- Popup Reminder Strings -->
+    <string name="reminder_title">تنبيه المهمة</string>
+    <string name="reminder_due_now">موعد استحقاق هذه المهمة الآن!</string>
+    <string name="reminder_scheduled">تذكير مجدول</string>
+    <string name="reminder_dismiss">إغلاق</string>
+    <string name="reminder_snooze">تأجيل</string>
+    <string name="reminder_snooze_10m">+10 دقائق</string>
+    <string name="reminder_snooze_1h">+1 ساعة</string>
+    <string name="reminder_snooze_tomorrow">للغد</string>
+    <string name="reminder_snooze_custom">تحديد وقت...</string>
+    <string name="reschedule_custom_datetime">تاريخ ووقت مخصص</string>
+    <string name="gcal_add_to_calendar">إضافة إلى تقويم جوجل</string>
+    <string name="gcal_sync_title">التكامل مع تقويم جوجل</string>
+    <string name="gcal_copy_ical">نسخ رابط تقويم Vikunja (iCal)</string>
+    <string name="gcal_open_web">فتح إعدادات تقويم جوجل</string>
+    <string name="app_update_title">تحديثات التطبيق</string>
+    <string name="app_update_check">البحث عن تحديثات</string>
+    <string name="app_update_latest">أنت تستخدم أحدث إصدار متوفر.</string>
+    <string name="app_update_available">يتوفر إصدار جديد</string>
+    <string name="app_update_channel">قناة التحديث</string>
+
+    <!-- Persistent Tasks Notification -->
+    <string name="persistent_tasks_title">مهام اليوم</string>
+    <string name="persistent_tasks_none">تم إنجاز جميع مهام اليوم بنجاح! 🎉</string>
+    <string name="persistent_overdue_and_today">%1$d مستحقة اليوم، %2$d متأخرة</string>
+
+    <!-- Battery & Permissions Guide Screen -->
+    <string name="battery_guide_title">موثوقية التنبيهات والعمل بالخلفية</string>
+    <string name="battery_guide_subtitle">تأكد من عمل تنبيهات ومواعيد المهام بدقة دون إيقافها بواسطة موفر الطاقة في أندرويد.</string>
+    <string name="perm_exact_alarm_title">التنبيهات الدقيقة (Exact Alarms)</string>
+    <string name="perm_exact_alarm_desc">مطلوبة لتشغيل التنبيه في الدقيقة المحددة بالضبط.</string>
+    <string name="perm_notification_title">إذن الإشعارات</string>
+    <string name="perm_notification_desc">يسمح لـ فيكونجا بتنبيهك بمواعيد المهام والتحديثات.</string>
+    <string name="perm_battery_opt_title">تحسين استهلاك البطارية</string>
+    <string name="perm_battery_opt_desc">تعطيل إغلاق التطبيق بالخلفية أثناء نوم الهاتف.</string>
+    <string name="perm_autostart_title">التشغيل التلقائي وإدارة النظام</string>
+    <string name="perm_autostart_desc">إذن خاص بالشركات المصنعة (شاومي، سامسونج، أوبو، هواوي).</string>
+    <string name="perm_granted">مفعّل</string>
+    <string name="perm_action_fix">تفعيل / ضبط</string>
+    <string name="perm_status_ok">مضبوط</string>
+    <string name="oem_detected_title">نوع الجهاز: %1$s</string>
+    <string name="dontkillmyapp_link">عرض الدليل التفصيلي على موقع Don\'t Kill My App</string>
+
+    <!-- Widget Strings -->
+    <string name="widget_quick_add">إضافة سريعة</string>
+    <string name="widget_no_tasks">لا توجد مهام مستحقة اليوم 🎉</string>
+    <string name="widget_today_tasks">جدول اليوم</string>
+    <string name="widget_refresh">تحديث</string>
+
+    <!-- Pomodoro & Focus Timer -->
+    <string name="focus_timer">مؤقت التركيز (بومودورو)</string>
+    <string name="focus_start">بدء التركيز</string>
+    <string name="focus_pause">إيقاف مؤقت</string>
+    <string name="focus_resume">استئناف</string>
+    <string name="focus_reset">إعادة ضبط</string>
+    <string name="focus_state_focus">جلسة تركيز</string>
+    <string name="focus_state_break">استراحة قصيرة</string>
+    <string name="focus_notification_title">جلسة التركيز جارية</string>
+    <string name="focus_notification_break">وقت الاستراحة</string>
+
+    <!-- Nagging / Persistent Alarm -->
+    <string name="nagging_alarm_title">المنبه الملح المستمر (Nagging Alarm)</string>
+    <string name="nagging_alarm_desc">تكرار رنين التنبيه كل دقيقتين للمهام العاجلة (أولوية 5) حتى يتم إنجازها أو تأجيلها.</string>
+
+    <!-- Morning Briefing & Evening Review -->
+    <string name="briefings_title">الملخص اليومي والمراجعة المسائية</string>
+    <string name="morning_briefing_toggle">ملخص التخطيط الصباحي (8:00 ص)</string>
+    <string name="morning_briefing_desc">تنبيه بموجز مهام اليوم للبدء بنشاط.</string>
+    <string name="evening_review_toggle">المراجعة المسائية (8:30 م)</string>
+    <string name="evening_review_desc">إشعار بالمهام المكتملة وتسهيل ترحيل المتبقي إلى الغد.</string>
+    <string name="evening_review_title">المراجعة المسائية للمهام</string>
+
+    <!-- Voice Capture -->
+    <string name="voice_speak_prompt">تحدث الآن (مثال: \"شراء الخضار غداً 5 مساءً !عالي\")...</string>
+    <string name="voice_capture_btn">إضافة سريعة بالصوت</string>
+
+    <!-- Quick Settings Tile -->
+    <string name="tile_quick_add_label">مهمة جديدة</string>
+
+    <!-- Web UI Clone Additions -->
+    <string name="nav_all_tasks">جميع المهام</string>
+    <string name="nav_starred">المميزة بنجمة</string>
+    <string name="completed_tasks">المهام المكتملة (%1$d)</string>
+    <string name="search_tasks_hint">البحث في المهام...</string>
+    <string name="filter_all">الكل</string>
+    <string name="filter_pending">قيد الانتظار</string>
+    <string name="filter_high_priority">أولوية عالية</string>
+    <string name="filter_has_due_date">لها تاريخ استحقاق</string>
+    <string name="no_tasks_today">لا توجد مهام مستحقة اليوم</string>
+    <string name="no_tasks_today_sub">استمتع بيومك أو أضف مهمة جديدة في الأسفل</string>
+    <string name="no_tasks_upcoming">لا توجد مهام قادمة مجدولة</string>
+    <string name="no_tasks_overdue">رائع! لا توجد مهام متأخرة</string>
+    <string name="no_tasks_starred">لا توجد مهام مميزة بنجمة حتى الآن</string>
+    <string name="no_tasks_all">لا توجد مهام</string>
+    <string name="projects_header">المشاريع</string>
+    <string name="active_tasks_count">%1$d نشطة</string>
+</resources>

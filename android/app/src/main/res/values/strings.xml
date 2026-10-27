@@ -1,0 +1,220 @@
+<resources>
+    <string name="app_name">Vikunja</string>
+    <string name="login">Login</string>
+    <string name="server_url">Server URL</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="totp_token">2FA / TOTP Code (Optional)</string>
+    <string name="api_token">API Token</string>
+    <string name="login_with_api_token">Login with API Token</string>
+    <string name="login_with_credentials">Username &amp; Password</string>
+    <string name="allow_self_signed">Allow Self-Signed / Custom SSL</string>
+    <string name="connecting">Connecting...</string>
+    <string name="login_success">Connected successfully</string>
+    <string name="logout">Logout</string>
+
+    <!-- Navigation & Tabs -->
+    <string name="nav_today">Today</string>
+    <string name="nav_upcoming">Upcoming</string>
+    <string name="nav_overdue">Overdue</string>
+    <string name="nav_projects">Projects</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Tasks -->
+    <string name="tasks">Tasks</string>
+    <string name="create_task">New Task</string>
+    <string name="quick_add">Quick Add</string>
+    <string name="quick_add_hint">e.g. Finish report *tomorrow !high ~Work #urgent</string>
+    <string name="task_title">Title</string>
+    <string name="task_description">Description</string>
+    <string name="due_date">Due Date</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="priority">Priority</string>
+    <string name="repeat_mode">Repeat</string>
+    <string name="percent_done">Progress</string>
+    <string name="labels">Labels</string>
+    <string name="assignees">Assignees</string>
+    <string name="comments">Comments</string>
+    <string name="attachments">Attachments</string>
+    <string name="relations">Relations &amp; Subtasks</string>
+    <string name="mark_done">Mark Done</string>
+    <string name="mark_undone">Mark Undone</string>
+    <string name="delete">Delete</string>
+    <string name="duplicate">Duplicate</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Views -->
+    <string name="view_list">List</string>
+    <string name="view_kanban">Kanban</string>
+    <string name="view_gantt">Gantt</string>
+    <string name="view_table">Table</string>
+    <string name="add_bucket">Add Bucket</string>
+    <string name="bucket_title">Bucket Title</string>
+    <string name="bucket_limit">Limit</string>
+
+    <!-- Notifications -->
+    <string name="reminders_channel">Task Reminders</string>
+    <string name="due_dates_channel">Due Date Alerts</string>
+    <string name="mentions_channel">Mentions &amp; Updates</string>
+    <string name="sync_channel">Sync &amp; Background Service</string>
+    <string name="action_snooze_10m">Snooze 10m</string>
+    <string name="action_snooze_1h">Snooze 1h</string>
+    <string name="action_snooze_tomorrow">Tomorrow</string>
+    <string name="action_open">Open</string>
+    <string name="daily_summary_title">Your Vikunja Daily Briefing</string>
+
+    <!-- Settings -->
+    <string name="theme">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_amoled">AMOLED Black</string>
+    <string name="language">Language</string>
+    <string name="lang_system">System Default</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ar">العربية (Arabic)</string>
+    <string name="sync_interval">Background Sync Interval</string>
+    <string name="persistent_service">Foreground Persistent Sync</string>
+    <string name="persistent_service_desc">Ensures instant background sync without Android putting the app to sleep.</string>
+    <string name="popup_reminders_toggle">Full-Screen Pop-up Reminders</string>
+    <string name="popup_reminders_toggle_desc">Show TickTick-style full-screen alarm dialog over lock screen and apps.</string>
+    <string name="persistent_notif_section">Sticky Status Bar Notification</string>
+    <string name="persistent_notif_toggle">Show Today\'s Tasks in Status Bar</string>
+    <string name="persistent_notif_toggle_desc">Pins today\'s upcoming and overdue tasks directly in your notifications.</string>
+    <string name="persistent_min_priority_label">Priority Filter for Status Bar</string>
+    <string name="battery_optimization">Battery Optimization Guide</string>
+    <string name="battery_optimization_desc">Check autostart, exact alarms, and manufacturer power saver settings.</string>
+    <string name="api_tokens_mgmt">API Tokens</string>
+    <string name="webhooks_mgmt">Webhooks</string>
+    <string name="multi_account">Accounts</string>
+
+    <!-- Share Target -->
+    <string name="share_create_task">Create task from shared text</string>
+    <string name="shared_text_saved">Task created from shared link/text</string>
+    <string name="create_project">New Project</string>
+    <string name="no_projects_found">No projects found</string>
+    <string name="refresh_projects">Refresh</string>
+
+    <!-- Popup Reminder Strings -->
+    <string name="reminder_title">Task Reminder</string>
+    <string name="reminder_due_now">This task is due right now!</string>
+    <string name="reminder_scheduled">Scheduled reminder</string>
+    <string name="reminder_dismiss">Dismiss</string>
+    <string name="reminder_snooze">Snooze</string>
+    <string name="reminder_snooze_10m">+10 min</string>
+    <string name="reminder_snooze_1h">+1 hour</string>
+    <string name="reminder_snooze_tomorrow">Tomorrow</string>
+    <string name="reminder_snooze_custom">Pick Time...</string>
+    <string name="reschedule_custom_datetime">Custom Date &amp; Time</string>
+    <string name="gcal_add_to_calendar">Add to Google Calendar</string>
+    <string name="gcal_sync_title">Google Calendar Integration</string>
+    <string name="gcal_copy_ical">Copy Vikunja iCal Feed URL</string>
+    <string name="gcal_open_web">Open Google Calendar Settings</string>
+    <string name="app_update_title">App Updates</string>
+    <string name="app_update_check">Check for Updates</string>
+    <string name="app_update_latest">You are using the latest version.</string>
+    <string name="app_update_available">New Version Available</string>
+    <string name="app_update_channel">Update Channel</string>
+
+    <!-- Persistent Tasks Notification -->
+    <string name="persistent_tasks_title">Today\'s Tasks</string>
+    <string name="persistent_tasks_none">All tasks completed for today! 🎉</string>
+    <string name="persistent_overdue_and_today">%1$d due today, %2$d overdue</string>
+
+    <!-- Battery & Permissions Guide Screen -->
+    <string name="battery_guide_title">Background &amp; Alarm Reliability</string>
+    <string name="battery_guide_subtitle">Ensure your task reminders trigger on time without being killed by Android power savers.</string>
+    <string name="perm_exact_alarm_title">Exact Alarms</string>
+    <string name="perm_exact_alarm_desc">Required to trigger reminders at the exact minute.</string>
+    <string name="perm_notification_title">Notifications</string>
+    <string name="perm_notification_desc">Allows Vikunja to alert you about tasks and sync updates.</string>
+    <string name="perm_battery_opt_title">Battery Optimization</string>
+    <string name="perm_battery_opt_desc">Disables aggressive app killing while your phone is asleep.</string>
+    <string name="perm_autostart_title">Autostart &amp; Background Management</string>
+    <string name="perm_autostart_desc">OEM-specific background permission (MIUI, ColorOS, OneUI, EMUI).</string>
+    <string name="perm_granted">Granted</string>
+    <string name="perm_action_fix">Enable / Fix</string>
+    <string name="perm_status_ok">Configured</string>
+    <string name="oem_detected_title">Device Detected: %1$s</string>
+    <string name="dontkillmyapp_link">View detailed guide on Don\'t Kill My App</string>
+
+    <!-- Widget Strings -->
+    <string name="widget_quick_add">Quick Add</string>
+    <string name="widget_no_tasks">No tasks due today 🎉</string>
+    <string name="widget_today_tasks">Today\'s Agenda</string>
+    <string name="widget_refresh">Refresh</string>
+
+    <!-- Pomodoro & Focus Timer -->
+    <string name="focus_timer">Focus Timer (Pomodoro)</string>
+    <string name="focus_start">Start Focus</string>
+    <string name="focus_pause">Pause</string>
+    <string name="focus_resume">Resume</string>
+    <string name="focus_reset">Reset</string>
+    <string name="focus_state_focus">Focusing</string>
+    <string name="focus_state_break">Short Break</string>
+    <string name="focus_notification_title">Focus Session in Progress</string>
+    <string name="focus_notification_break">Break Time</string>
+
+    <!-- Nagging / Persistent Alarm -->
+    <string name="nagging_alarm_title">Persistent Nagging Alarm</string>
+    <string name="nagging_alarm_desc">Repeats reminder alarm every 2 minutes for urgent tasks (Priority 5) until completed or snoozed.</string>
+
+    <!-- Morning Briefing & Evening Review -->
+    <string name="briefings_title">Daily Briefing &amp; Review</string>
+    <string name="morning_briefing_toggle">Morning Planning Alert (8:00 AM)</string>
+    <string name="morning_briefing_desc">Summarizes tasks due today to kickstart your day.</string>
+    <string name="evening_review_toggle">Evening Review Alert (8:30 PM)</string>
+    <string name="evening_review_desc">Celebrates completed tasks and helps roll leftover tasks over to tomorrow.</string>
+    <string name="evening_review_title">Evening Task Review</string>
+
+    <!-- Voice Capture -->
+    <string name="voice_speak_prompt">Speak task now (e.g. \"Buy groceries tomorrow 5pm !high\")...</string>
+    <string name="voice_capture_btn">Voice Quick Add</string>
+
+    <!-- Quick Settings Tile -->
+    <string name="tile_quick_add_label">Add Task</string>
+
+    <!-- Web UI Clone Additions -->
+    <string name="nav_all_tasks">All Tasks</string>
+    <string name="nav_starred">Starred</string>
+    <string name="completed_tasks">Completed (%1$d)</string>
+    <string name="search_tasks_hint">Search tasks...</string>
+    <string name="filter_all">All</string>
+    <string name="filter_pending">Pending</string>
+    <string name="filter_high_priority">High Priority</string>
+    <string name="filter_has_due_date">Has Due Date</string>
+    <string name="no_tasks_today">No tasks due today</string>
+    <string name="no_tasks_today_sub">Enjoy your free time or add a new task below</string>
+    <string name="no_tasks_upcoming">No upcoming tasks scheduled</string>
+    <string name="no_tasks_overdue">All caught up! No overdue tasks</string>
+    <string name="no_tasks_starred">No starred tasks yet</string>
+    <string name="no_tasks_all">No tasks found</string>
+    <string name="projects_header">Projects</string>
+    <string name="active_tasks_count">%1$d active</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_schedule">Schedule</string>
+    <string name="nav_my_tasks">My Tasks</string>
+    <string name="no_tasks_open">No open tasks 🎉</string>
+    <string name="no_tasks_schedule">No scheduled tasks</string>
+    <string name="open_calendar_view">Open Interactive Calendar</string>
+    <string name="nav_completed">Completed</string>
+    <string name="sort_title">Sort Tasks</string>
+    <string name="sort_due_date_asc">Due Date (Earliest First)</string>
+    <string name="sort_due_date_desc">Due Date (Latest First)</string>
+    <string name="sort_priority_desc">Priority (Highest First)</string>
+    <string name="sort_priority_asc">Priority (Lowest First)</string>
+    <string name="sort_title_asc">Title (A - Z)</string>
+    <string name="sort_title_desc">Title (Z - A)</string>
+    <string name="sort_created_desc">Created Date (Newest First)</string>
+    <string name="sort_completed_desc">Completed Time (Newest First)</string>
+    <string name="time_filter_all">All Time</string>
+    <string name="time_filter_today">Today</string>
+    <string name="time_filter_yesterday">Yesterday</string>
+    <string name="time_filter_this_week">This Week</string>
+    <string name="time_filter_this_month">This Month</string>
+    <string name="time_filter_custom">Pick Date…</string>
+    <string name="select_completed_date">Select Completed Date</string>
+</resources>

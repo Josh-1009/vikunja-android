@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="quick_add"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_input_add"
+        android:shortcutShortLabel="@string/quick_add"
+        android:shortcutLongLabel="@string/quick_add">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="cloud.codella.vikunja"
+            android:targetClass="cloud.codella.vikunja.MainActivity"
+            android:data="vikunja://quick_add" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="today_tasks"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_today"
+        android:shortcutShortLabel="@string/nav_today"
+        android:shortcutLongLabel="@string/nav_today">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="cloud.codella.vikunja"
+            android:targetClass="cloud.codella.vikunja.MainActivity"
+            android:data="vikunja://today" />
+    </shortcut>
+</shortcuts>
